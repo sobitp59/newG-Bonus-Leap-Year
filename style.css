@@ -4,12 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nanum Pen Script', cursive;
-    /* font-family: 'Archivo', sans-serif; */
-    /* font-family: 'Nanum Pen Script', cursive; */
     font-family: 'Space Grotesk', sans-serif;
 }
 :root{
-    --primary-color : hsla(54,100%,92%,100%);
+    --primary-color : rgb(255, 255, 255);
     --secondary-color: #112240;
     --secondary2-color: rgba(17, 34, 64, 0.264)0;
 
@@ -25,7 +23,6 @@
     color: var(--secondary-color);
     font-size: 3.5rem;
     padding-top: 2.5rem ;
-    /* margin-bottom: 2.5rem; */
 }
 
 .container p{
@@ -65,7 +62,7 @@
     border: none;
     outline: none;
     background-color: var(--secondary-color);
-    color: wheat;
+    color: rgb(255, 255, 255);
     font-size: 1rem;
 }
 

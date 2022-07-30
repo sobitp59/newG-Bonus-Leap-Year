@@ -4,43 +4,16 @@ let output = document.getElementById('output-answer');
 
 btn.addEventListener('click', ()=>{
     number = Number(input.value)
-    checkPrime(number)
-
-    
+    checkLeapYear(number)
 })
 
-let checkPrime = (number) => {
+let checkLeapYear = (number) => {
 
-    isPrime = true
-
-    if(number == ''){
-        output.textContent = 'please enter a number'
+    if(number === '' || number === 0 || number < 0){
+        output.textContent = `please enter correct year`
+    }else if ((number % 400 == 0) || (number % 4 == 0) && (number % 100 != 0)){
+        output.textContent = `${number} is a leap year`
+    }else{
+        output.textContent = `${number} is not a leap year`
     }
-
-    if(number < 0 || number === 0){
-        output.textContent = 'enter number greater than zero'
-    }
-
-    if(number === 1){
-        output.textContent = '1 is neither prime nor composite'
-    }
-    
-    
-    if(number > 1){
-        for(let i = 2; i < number; i++){
-            if(number%i===0){
-                isPrime = false
-                break
-            }
-        }
-
-        if(isPrime){
-            output.textContent = `${number} is a prime number`
-        }
-        
-        if(!isPrime){
-            output.textContent = `${number} is not a prime number`
-        }
-    }
-
 }
