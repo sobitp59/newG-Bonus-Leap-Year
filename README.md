@@ -6,4 +6,4 @@
 - CSS
 - JavaScript
 
-# Live Link - [Click](https:check-leap.vercel.app)
+# Live Link - [Click](https://check-leap.vercel.app)
